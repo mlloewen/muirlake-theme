@@ -1,0 +1,1189 @@
+/*
+Theme Name: Muir Lake Church Responsive
+Theme URI: http://underscores.me/
+Author: Alex Pankratz, Matthew Loewen
+Author URI: http://ap-design.ca
+Description: Description
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+Text Domain: muir-lake
+Domain Path: /languages/
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+ Muir Lake is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+*/
+
+/*--------------------------------------------------------------
+>>> TEMPLATE TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Reset
+2.0 - Typography
+3.0 - Elements
+4.0 - Forms
+5.0 - Navigation
+	5.1 - Links
+	5.2 - Menus
+6.0 - Accessibility
+7.0 - Alignments
+8.0 - Clearings
+9.0 - Widgets
+10.0 - Content
+	10.1 - Posts and pages
+	10.2 - Asides
+	10.3 - Comments
+	10.4 Social Shareing
+11.0 - Infinite scroll
+12.0 - Media
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 - Reset
+--------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+html {
+	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+	overflow-y: scroll; /* Keeps page centered in all browsers regardless of content height */
+	-webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+	-ms-text-size-adjust:     100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+*,
+*:before,
+*:after { /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+	-webkit-box-sizing: border-box; /* Not needed for modern webkit but still used by Blackberry Browser 7.0; see http://caniuse.com/#search=box-sizing */
+	-moz-box-sizing:    border-box; /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
+	box-sizing:         border-box;
+}
+body {
+	background: #fff;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+	display: block;
+}
+/* ol, ul {
+	list-style: none;
+} */
+table { /* tables still need 'cellspacing="0"' in the markup */
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+a:focus {
+	outline: thin dotted;
+}
+a:hover,
+a:active {
+	outline: 0;
+}
+a img {
+	border: 0;
+}
+
+/*--------------------------------------------------------------
+2.0 Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+	color: #404040;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+p {
+	margin-bottom: 1.5em;
+}
+b, strong {
+	font-weight: bold;
+}
+dfn, cite, em, i {
+	font-style: italic;
+}
+blockquote {
+	margin: 0 1.5em;
+}
+address {
+	margin: 0 0 1.5em;
+}
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+code, kbd, tt, var {
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+small {
+	font-size: 75%;
+}
+big {
+	font-size: 125%;
+}
+
+/*--------------------------------------------------------------
+3.0 Elements
+--------------------------------------------------------------*/
+hr {
+	background-color: #34498a;
+	border: 0;
+	height: 2px;
+	margin-bottom: 1.5em;
+}
+ul, ol {
+	margin: 0 0 1.5em 3em;
+}
+/* ul {
+	list-style: disc;
+}
+ol {
+	list-style: decimal;
+} */
+dt {
+	font-weight: bold;
+}
+dd {
+	margin: 0 1.5em 1.5em;
+}
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+figure {
+	margin: 0;
+}
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+th {
+	font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+4.0 Forms
+--------------------------------------------------------------*/
+button,
+input,
+select,
+textarea {
+	font-size: 100%; /* Corrects font size not being inherited in all browsers */
+	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+	*vertical-align: middle; /* Improves appearance and consistency in IE6/IE7 */
+}
+button,
+input[type="submit"] {
+	border: 1px solid #ccc;
+	border-color: #ccc #ccc #bbb #ccc;
+	border-radius: 3px;
+	background: #e6e6e6;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+	color: rgba(0, 0, 0, .8);
+	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
+	-webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 1;
+	padding: .6em 1em .4em;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+button:hover,
+input[type="submit"]:hover {
+	border-color: #ccc #bbb #aaa #bbb;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+}
+button:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="submit"]:active {
+	border-color: #aaa #bbb #bbb #bbb;
+	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+	-webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+	border: 0;
+	padding: 0;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+	color: #111;
+}
+input[type="text"],
+input[type="email"] {
+	padding: 3px;
+}
+textarea {
+	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
+	padding-left: 3px;
+	vertical-align: top; /* Improves readability and alignment in all browsers */
+	width: 98%;
+}
+
+/*--------------------------------------------------------------
+5.0 Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+5.1 Links
+--------------------------------------------------------------*/
+a {
+	color: royalblue;
+}
+a:visited {
+	color: purple;
+}
+a:hover,
+a:focus,
+a:active {
+	color: midnightblue;
+}
+
+/*--------------------------------------------------------------
+5.2 Menus
+--------------------------------------------------------------*/
+.main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+}
+.main-navigation ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+.main-navigation li {
+	float: left;
+	position: relative;
+}
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+}
+
+.main-navigation li:hover > a {
+}
+.main-navigation .current_page_item a,
+.main-navigation .current-menu-item a {
+}
+
+/*--------------------------------------------------------------
+6.0 Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/*--------------------------------------------------------------
+7.0 Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+/*--------------------------------------------------------------
+8.0 Clearings
+--------------------------------------------------------------*/
+.entry-content:before,
+.entry-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: '';
+	display: table;
+}
+
+.entry-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+9.0 Widgets
+--------------------------------------------------------------*/
+
+/* Make sure select elements fit in widgets */
+
+/* Search widget */
+
+/*--------------------------------------------------------------
+10.0 Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+10.1 Posts and pages
+--------------------------------------------------------------*/
+.hentry {
+	margin: 0 0 1.5em;
+}
+.entry-content,
+ {
+	margin: 1.5em 0 0;
+}
+
+/*--------------------------------------------------------------
+10.2 Asides
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+10.3 Comments
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+10.4 Social Shareing
+--------------------------------------------------------------*/
+#share-buttons img {
+width: 35px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+} 
+/*--------------------------------------------------------------
+11.0 Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
+
+/*--------------------------------------------------------------
+12.0 Media
+--------------------------------------------------------------*/
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+ALL VIEWPORTS
+--------------------------------------------------------------*/
+/*---------------------------------------
+GENERAL
+---------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+@font-face {
+    font-family: 'mistral';
+    src: url('fonts/mistral/mistral-webfont.eot');
+    src: url('fonts/mistral/mistral-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/mistral/mistral-webfont.woff') format('woff'),
+         url('fonts/mistral/mistral-webfont.ttf') format('truetype'),
+         url('fonts/mistral/mistral-webfont.svg#mistralregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	background: url(images/kl_bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  	min-height: 100%;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #4f7566;
+	line-height: 25px;
+}
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.clearfix{
+	clear: both;
+}
+
+
+h1{
+	font-size: 30px;
+	font-weight: 700;
+	color: #34498a;
+	padding-bottom: 20px;
+}
+
+h2{
+	font-family: 'mistral';
+	font-size: 30px;
+	line-height: 30px;
+	color: #34498a;
+	border-bottom: 2px solid #34498a;
+	margin-bottom: 20px;
+}
+
+h3{
+	font-family: 'mistral';
+	font-size: 24px;
+	color: #34498a;
+	padding-bottom: 20px;
+}
+
+h4{
+	font-weight: 700;
+	color: #34498a;
+	padding-bottom: 20px;
+}
+
+p{
+	margin-bottom: 8px;
+}
+
+a, a:visited{
+	text-decoration: none;
+	color: #34498a;
+}
+
+a:hover, a:active{
+	color: #34498a;
+}
+
+h2 a, h3 a {
+	color: #34498a;
+}
+/*---------------------------------------
+HEADER
+---------------------------------------*/
+#show-menu-button{
+	float: right;
+	margin: 25px 25px 0 0;
+	background-color: white;
+	padding-top: 5px;
+}
+
+.site-branding{
+	padding-top: 5px;
+	text-align: center;
+	width: 100%;
+}
+
+div.site-branding img{
+	background-image: url("images/logog.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+/*
+div.site-branding img {	background-image: url('images/logog.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+} 
+*/
+
+/* line 648, ../sass/style.scss */
+.site-branding img {
+  width: 50%;
+  max-width: 300px;
+  height: auto;
+  z-index: 99;
+}
+
+
+.site-tagline{
+	display: none;
+}
+
+#site-navigation{
+	background: #cde0d8;
+	position: absolute;
+	top: 0;
+	width: 75%;
+/*	min-height: 100%;  */ 
+	overflow: hidden;
+	left: -75%;
+	transition: left 0.5s ease;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+	opacity: 0.9;
+	z-index: 99999;
+}
+
+.show-menu #site-navigation{
+	left: 0%;
+}
+
+#site-navigation li{
+	width: 100%;
+	text-transform: uppercase;
+	font-weight: 700;
+	border-bottom: 2px solid #4f7566;
+}
+
+#site-navigation a{
+	display: block;
+	padding: 20px 25px;
+	color: #4f7566;
+}
+
+#site-navigation a:hover, a:active{
+	color: #34498a;
+/*	background: #fff; */
+	background-image: url('images/gradent2.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.m-button a{
+	padding: 5px 5px;
+	color: #4f7566;
+	background-color: #CDDED1;
+}
+
+.m-button a:hover, a:active{
+/*	color: #34498a;
+	background: #ggg; */
+
+}
+/*---------------------------------------
+CONTENT
+---------------------------------------*/
+#main{
+	background: #fff;
+	padding: 25px 10px;
+	-webkit-box-shadow: 0px 4px 9px 0px rgba(177, 194, 187, 0.6);
+	-moz-box-shadow:    0px 4px 9px 0px rgba(177, 194, 187, 0.6);
+	box-shadow:         0px 4px 9px 0px rgba(177, 194, 187, 0.6);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+}
+
+#main article {
+  margin: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+}
+
+.promo-links{
+		display: block;
+	}
+
+	.promo-links a{
+		display: block;
+		background: #cde0d8;
+		text-transform: uppercase;
+/*		font-weight: bold; */
+		margin: 35px 0;
+
+		-webkit-box-shadow: 0px 4px 10px 0px rgba(177, 194, 187, 1);
+		-moz-box-shadow:    0px 4px 10px 0px rgba(177, 194, 187, 1);
+		box-shadow:         0px 4px 10px 0px rgba(177, 194, 187, 1);
+	}
+
+.promo_links a:active a:hover{
+	color: #34498a;
+	background: #fff;
+}
+
+	.large-link-image{
+		display: none;
+	}
+
+	.promo-links h3{
+		margin-top: 0;
+		font-size: 25px;
+		padding: 10px 0 14px 14px;
+	}
+
+
+.green-background{
+	background: #cde0d8;
+	padding: 25px 40px;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+	opacity: 0.85;
+	-webkit-box-shadow: 0px 4px 10px 0px rgba(177, 194, 187, 1);
+	-moz-box-shadow:    0px 4px 10px 0px rgba(177, 194, 187, 1);
+	box-shadow:         0px 4px 10px 0px rgba(177, 194, 187, 1);
+	/*z-index: -50;*/
+}
+
+.leadership-image{
+	padding: 10px 0;
+}
+
+iframe{
+	margin: 15px 0;
+	-webkit-box-shadow: 0px 4px 9px 0px rgba(177, 194, 187, 0.6);
+	-moz-box-shadow:    0px 4px 9px 0px rgba(177, 194, 187, 0.6);
+	box-shadow:         0px 4px 9px 0px rgba(177, 194, 187, 0.6);
+}
+
+.sermon-title{
+	margin-top: 20px;
+}
+
+/*---------------------------------------
+FOOTER
+---------------------------------------*/
+.site-footer{
+background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 59%, rgba(255,255,255,0) 69%, rgba(255,255,255,0) 75%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(59%,rgba(255,255,255,0)), color-stop(69%,rgba(255,255,255,0)), color-stop(75%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 59%,rgba(255,255,255,0) 69%,rgba(255,255,255,0) 75%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 59%,rgba(255,255,255,0) 69%,rgba(255,255,255,0) 75%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 59%,rgba(255,255,255,0) 69%,rgba(255,255,255,0) 75%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 59%,rgba(255,255,255,0) 69%,rgba(255,255,255,0) 75%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+}
+
+#footer-content{
+	padding: 25px 40px;
+}
+
+#copyright-single{
+	display: none;
+	padding: 20px;
+	text-align: center;
+	background-image: url('images/gradent2.png');
+	background-size: 250px 70px;
+	background-repeat: no-repeat;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+	opacity: 0.85;
+}
+
+/*--------------------------------------------------------------
+MEDIUM VIEWPORT
+--------------------------------------------------------------*/
+@media screen and (min-width: 720px) {  	
+	/*---------------------------------------
+	HEADER
+	---------------------------------------*/
+	.header-left{
+		width: 50%;
+		float: left;
+	}
+
+	.header-right{
+		float: left;
+		width: 50%;
+		padding-right: 20px;
+	}
+
+	.site-branding{
+		text-align: left;
+		overflow: hidden;
+	}
+
+	.site-branding img{
+		max-width: 300px;
+		padding: 20px, 0;
+	}
+
+	#show-menu-button{
+		display: none;
+	}
+
+
+	.site-tagline{
+		display: inline-block;
+		float: right;
+		clear: right;
+		width: 250px;
+		font-style: italic;
+		padding: 20px;
+		text-align: center;
+		background-image: url('images/gradent2.png');
+		background-size: 290px 117px;
+		background-repeat: no-repeat;
+		font-size: 18px;
+	}
+
+	#site-navigation{
+		position: static;
+		width: 100%;
+		padding: 0 30px;
+
+		-webkit-box-shadow: 0px 4px 10px 0px rgba(177, 194, 187, 1);
+		-moz-box-shadow:    0px 4px 10px 0px rgba(177, 194, 187, 1);
+		box-shadow:         0px 4px 10px 0px rgba(177, 194, 187, 1);
+	}
+
+	#site-navigation li{
+		width: auto;
+		border-bottom: none;
+	}
+
+	#site-navigation a{
+		display: inline-block;
+		padding: 15px 10px;
+	}
+
+
+	/*---------------------------------------
+	CONTENT
+	---------------------------------------*/
+	#main{
+		padding: 25px 25px;
+	}
+
+	.col-1{
+		float: right;
+		width: 60%;
+		padding-left: 40px;
+	}
+
+	.col-2{
+		float: right;
+		width: 40%;
+	}
+
+	.right-section{
+		float: left;
+		width: 50%;
+		padding-left: 20px;
+	}
+
+	.right-section-expand{
+		clear: both;
+	}
+
+	.left-section{
+		float: left;
+		width: 50%;
+	}
+
+	/*---------------------------------------
+	FOOTER
+	---------------------------------------*/
+	#contact{
+		float: left;
+	}
+
+	#copyright-paragraph{
+		display: none;
+	}
+
+	#copyright-single{
+		display: block;
+		float: right;
+		margin-top: 10px;
+	}
+
+}
+
+/*--------------------------------------------------------------
+LARGE VIEWPORT
+--------------------------------------------------------------*/
+@media screen and (min-width: 1050px) {
+	/*---------------------------------------
+	GENERAL
+	---------------------------------------*/
+	.container{
+		width: 960px;
+		margin: 0px auto;
+		  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=95);
+  opacity: 0.95;
+	}
+
+	.container-desktop-nav{
+		width: 1020px;
+		margin: 0px auto;
+	}
+
+	/*---------------------------------------
+	HEADER
+	---------------------------------------*/
+	.header-right{
+		padding-right: 0;
+	}
+
+	.site-branding img{
+		max-width: 400px;
+		width: 60%;
+		padding: 20px 0;
+	}
+
+	.site-tagline{
+		margin-top: 200px;
+		width: 580px;
+		background-size: 650px 70px;
+	}
+
+	#site-navigation a{
+		padding: 15px 18px;
+	}
+
+
+	/*---------------------------------------
+	CONTENT
+	---------------------------------------*/
+	.promo-links a{
+		width: 290px;
+		float: left;
+	}
+
+	.promo-links a:nth-child(2){
+		margin: 35px 45px;
+	}
+
+	.small-link-image{
+		display: none;
+	}
+
+	.large-link-image{
+		display: block;
+		/*height: 175px;*/
+	}
+
+	/*---------------------------------------
+	FOOTER
+	---------------------------------------*/
+	#footer-content{
+		padding: 25px 0;
+	}
+}
+a{
+color: #34498a;
+}
+
+a[href^="http://"] :not(#site-navigation){
+background: transparent url(images/anchor2.png) center left no-repeat;
+display:inline-block;
+padding-left: 15px;
+}
+
+a[href$="jpg"], a[href*="share"]{
+	display: inline-block;
+	background: none;
+}
+.anchor{
+background: transparent url(images/anchor2.png) center left no-repeat;
+display:inline-block;
+padding-left:15px;
+}
+#page-container { height:100%; }
+
+@media print {
+	#site-navigation, .site-header, .sharedaddy {
+		display: none;	
+	}
+}
+
+
+		#nav
+		{
+			width: 60em; /* 1000 */
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+			position: absolute;
+			top: 25%;
+			left: 50%;
+			margin-left: -30em; /* 30 480 */
+		position: static;
+		width: 100%;
+		padding: 0 30px;
+		}
+
+			#nav > a
+			{
+				display: none;
+			}
+
+			#nav li
+			{
+				position: relative;
+			}
+				#nav li a
+				{
+					color: #fff;
+					display: block;
+				}
+				#nav li a:active
+				{
+					background-color: #c00 !important;
+				}
+
+			#nav span:after
+			{
+				width: 0;
+				height: 0;
+				border: 0.313em solid transparent; /* 5 */
+				border-bottom: none;
+				border-top-color: #efa585;
+				content: '';
+				vertical-align: middle;
+				display: inline-block;
+				position: relative;
+				right: -0.313em; /* 5 */
+			}
+
+			/* first level */
+
+			#nav > ul
+			{
+				height: 3.75em; /* 60 */
+				background-color: #e15a1f;
+			}
+				#nav > ul > li
+				{
+					width: 25%;
+					height: 100%;
+					float: left;
+				}
+					#nav > ul > li > a
+					{
+						height: 100%;
+						font-size: 1.5em; /* 24 */
+						line-height: 2.5em; /* 60 (24) */
+						text-align: center;
+					}
+						#nav > ul > li:not( :last-child ) > a
+						{
+							border-right: 1px solid #cc470d;
+						}
+						#nav > ul > li:hover > a,
+						#nav > ul:not( :hover ) > li.active > a
+						{
+							background-color: #cc470d;
+						}
+
+
+				/* second level */
+
+				#nav li ul
+				{
+					background-color: #cc470d;
+					display: none;
+					position: absolute;
+					top: 100%;
+				}
+					#nav li:hover ul
+					{
+						display: block;
+						left: 0;
+						right: 0;
+					}
+						#nav li:not( :first-child ):hover ul
+						{
+							left: -1px;
+						}
+						#nav li ul a
+						{
+							font-size: 1.25em; /* 20 */
+							border-top: 1px solid #e15a1f;
+							padding: 0.75em; /* 15 (20) */
+						}
+							#nav li ul li a:hover,
+							#nav li ul:not( :hover ) li.active a
+							{
+								background-color: #e15a1f;
+							}
+
+
+		@media only screen and ( max-width: 62.5em ) /* 1000 */
+		{
+			#nav
+			{
+				width: 100%;
+				position: static;
+				margin: 0;
+			}
+		}
+
+		@media only screen and ( max-width: 40em ) /* 640 */
+		{
+			html
+			{
+				font-size: 75%; /* 12 */
+			}
+
+			#nav
+			{
+				position: relative;
+				top: auto;
+				left: auto;
+			}
+				#nav > a
+				{
+					width: 3.125em; /* 50 */
+					height: 3.125em; /* 50 */
+					text-align: left;
+					text-indent: -9999px;
+					background-color: #e15a1f;
+					position: relative;
+				}
+					#nav > a:before,
+					#nav > a:after
+					{
+						position: absolute;
+						border: 2px solid #fff;
+						top: 35%;
+						left: 25%;
+						right: 25%;
+						content: '';
+					}
+					#nav > a:after
+					{
+						top: 60%;
+					}
+
+				#nav:not( :target ) > a:first-of-type,
+				#nav:target > a:last-of-type
+				{
+					display: block;
+				}
+
+
+			/* first level */
+
+			#nav > ul
+			{
+				height: auto;
+				display: none;
+				position: absolute;
+				left: 0;
+				right: 0;
+			}
+				#nav:target > ul
+				{
+					display: block;
+				}
+				#nav > ul > li
+				{
+					width: 100%;
+					float: none;
+				}
+					#nav > ul > li > a
+					{
+						height: auto;
+						text-align: left;
+						padding: 0 0.833em; /* 20 (24) */
+					}
+						#nav > ul > li:not( :last-child ) > a
+						{
+							border-right: none;
+							border-bottom: 1px solid #cc470d;
+						}
+
+
+				/* second level */
+
+				#nav li ul
+				{
+					position: static;
+					padding: 1.25em; /* 20 */
+					padding-top: 0;
+				}
+		}
