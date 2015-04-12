@@ -30,7 +30,7 @@
 	<div class="container">
 		<h2>Welcome</h2>
 <?php
-	echo do_shortcode('[post-content id=2885]');
+	echo do_shortcode('[ml-post id=1]');
 ?>
 
 	<div class="clearfix"></div>
@@ -100,11 +100,11 @@
 		</div>
 
 		<div class="col-2">
-			<? echo do_shortcode('[ai1ec events_limit="5"]') ?> 
+			<? echo do_shortcode('[ai1ec events_limit="5"]') ?>
 		</div>
 
 		<div class="col-1">
-		
+
 			<a href="javascript:void(0)" onclick="mymap();">
 				<img src="<?php bloginfo('template_directory'); ?>/images/map2.jpg" alt="">
 			</a>
@@ -129,5 +129,5 @@ function emptymap() {
 	document.getElementById("map").innerHTML = "";
 }
 </script>
-<?php get_footer(); 
+<?php get_footer();
 ?>
