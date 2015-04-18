@@ -15,8 +15,9 @@
 			<div id="footer-content">
 				<h2>Contact</h2>
 				<div id="contact">
-					<p><strong>PHONE:</strong> 780.963.9975</p>
-					<p><strong>EMAIL:</strong> <a href="mailto:info@muirlakealliance.ca" target="_blank">info@muirlakealliance.ca</a></p>
+					<p><strong>Phone:</strong> 780.963.9975</p>
+					<p><strong>Email:</strong> <a href="mailto:info@muirlakealliance.ca" target="_blank">info@muirlakealliance.ca</a></p>
+					<p><strong>Face Book:</strong> <a href="https://www.facebook.com/pages/Muir-Lake-Community-Alliance-Church/1582120052007941?ref=bookmarks">Muir Lake Community Alliance Church</a></p>
 					<p id="copyright-paragraph">© 2014 Muir Lake Alliance</p>	
 				</div><!-- #contact -->
 

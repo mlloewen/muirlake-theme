@@ -15,8 +15,8 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link rel="icon" 
-      type="image/png" 
+<link rel="icon"
+      type="image/png"
       href="/favicon.png">
 
 <script src="<?php bloginfo('template_directory'); ?>/js/lazysizes.min.js" async=""></script>
@@ -28,7 +28,7 @@
 			loadJS("<?php bloginfo('template_directory'); ?>/js/ls.respimg.min.js");
 		}
 </script>
-<script src="<?php bloginfo('template_directory'); ?>/js/ls.bgset.min.js" async=""></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/ls.include.min.js" async=""></script>
 
 <?php wp_head(); ?>
 
@@ -42,7 +42,7 @@
 </head>
 
 <body  <?php body_class(); ?> >
-<!-- <div id="ml-bg" class="lazyload" data-bgset="<?php bloginfo('template_directory'); ?>/images/kl_bg500.jpg [(max-width: 720px)] | <?php bloginfo('template_directory'); ?>/images/kl_bg720.jpg [(max-width: 1050px)] | <?php bloginfo('template_directory'); ?>/images/kl_bg.jpg "> -->
+
 <div id="page-container" class="hfeed site" >
 	<header id="masthead" class="site-header" role="banner">
 		<a href="#" id="show-menu-button"><img src="<?php bloginfo('template_directory'); ?>/images/menu-button.png"></a>
@@ -65,7 +65,7 @@
 		</div><!-- #container -->
 
 <!--		<nav id="site-navigation" class="main-navigation" role="navigation">  -->
-		<nav id="site-navigation" class="main-navigation" role="navigation"> 
+		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<div  class="container-desktop-nav">
 				<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'muir-lake' ); ?></a>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>

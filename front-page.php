@@ -99,15 +99,13 @@
 			<h2 class="widget-title">Information</h2>
 		</div>
 
-		<div class="col-2">
-			<? echo do_shortcode('[ai1ec events_limit="5"]') ?>
+		<div class="col-2 lazyload" data-expand="-1" data-include="<?php bloginfo('template_directory'); ?>/aione.html" >
+
 		</div>
-
 		<div class="col-1">
-
-			<a href="javascript:void(0)" onclick="mymap();">
-				<img src="<?php bloginfo('template_directory'); ?>/images/map2.jpg" alt="">
-			</a>
+		   <a href="javascript:void(0)" onclick="mymap();">
+			   <img data-src="<?php bloginfo('template_directory'); ?>/images/map2.jpg" class="lazyload" data-expand="-1" />
+       </a>
 		</div>
 		<div class="col-3">
 			<p><strong>DIRECTIONS:</strong> From Jennifer Heil Way, Spruce Grove. Turn left to merge onto Yellowhead Highway West. Take exit 355 toward Calahoo. Merge onto AB-779 North. Go north 4.5 km. Just past the Muir Lake School on the left side (east) is the church.</p>
