@@ -98,8 +98,9 @@
 		<div class="title">
 			<h2 class="widget-title">Information</h2>
 		</div>
-		<div class="col-2" >
-			<? echo do_shortcode('[ai1ec events_limit="5"]'); ?> 
+    <? echo do_shortcode('[ai1ec events_limit="5"]') ?> 
+		<div class="col-2 lazyload" data-expand="-1" data-include="<?php bloginfo('template_directory'); ?>/aione.html" >
+
 		</div>
 		<div class="col-1">
 		   <a href="javascript:void(0)" onclick="mymap();">
