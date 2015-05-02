@@ -19,16 +19,15 @@
       type="image/png"
       href="/favicon.png">
 
-<script src="<?php bloginfo('template_directory'); ?>/js/lazysizes.min.js" async=""></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/1.1.0/lazysizes.min.js" async=""></script>
 <script>
 		function loadJS(u){var r=document.getElementsByTagName("script")[ 0 ],s=document.createElement("script");s.src=u;r.parentNode.insertBefore(s,r);}
 
 		if(!window.HTMLPictureElement){
 			document.createElement('picture');
-			loadJS("<?php bloginfo('template_directory'); ?>/js/ls.respimg.min.js");
+			loadJS("https://cdnjs.cloudflare.com/ajax/libs/lazysizes/1.1.0/plugins/respimg/ls.respimg.min.js");
 		}
 </script>
-<script src="<?php bloginfo('template_directory'); ?>/js/ls.include.min.js" async=""></script>
 
 <?php wp_head(); ?>
 
