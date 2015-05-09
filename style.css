@@ -565,7 +565,7 @@ HEADER
 }
 
 div.site-branding img{
-	background-image: url("images/logog.png");
+/*	background-image: url("images/logog.png");  */
 	background-repeat: no-repeat;
 	background-size: contain;
 }

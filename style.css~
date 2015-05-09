@@ -564,11 +564,11 @@ HEADER
 	width: 100%;
 }
 
-/* div.site-branding img{
+div.site-branding img{
 	background-image: url("images/logog.png");
 	background-repeat: no-repeat;
 	background-size: contain;
-} */
+}
 /*
 div.site-branding img {	background-image: url('images/logog.png');
   background-repeat: no-repeat;
@@ -578,7 +578,7 @@ div.site-branding img {	background-image: url('images/logog.png');
 
 /* line 648, ../sass/style.scss */
 .site-branding img {
-/*  width: 50%; */
+  width: 50%;
   max-width: 300px;
   height: auto;
   z-index: 99;
@@ -895,8 +895,8 @@ LARGE VIEWPORT
 	}
 
 	.site-branding img{
-		max-width: 300px;
-		height: 
+		max-width: 400px;
+		width: 60%;
 		padding: 20px 0;
 	}
 
