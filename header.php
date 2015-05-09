@@ -51,7 +51,13 @@
 
 				<div class="header-left">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-						<img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==></img>
+					<!-- <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==></img>  -->
+						<picture>
+							<source data-srcset="<?php bloginfo('template_directory'); ?>/images/logogrd.svg" />
+							<source data-srcset="<?php bloginfo('template_directory'); ?>/images/logog.png" />
+  							<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								class="lazyload" alt="logo" />
+						</picture>
 					</a>
 				</div>
 
