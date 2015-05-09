@@ -495,7 +495,7 @@ html{
 }
 
 body {
-		background: url(images/kl_bg4.jpg) no-repeat center center fixed; 
+		background: url(images/kl_bg4.jpg) no-repeat center center fixed;
 }
 
 .clearfix{
@@ -565,10 +565,11 @@ HEADER
 }
 
 div.site-branding img{
-	background-image: url("images/logog.png");
+/*	background-image: url("images/logog.png");  */
 	background-repeat: no-repeat;
 	background-size: contain;
 }
+
 /*
 div.site-branding img {	background-image: url('images/logog.png');
   background-repeat: no-repeat;
@@ -754,7 +755,7 @@ MEDIUM VIEWPORT
 	HEADER
 	---------------------------------------*/
 	.header-left{
-		width: 50%;
+/*		width: 50%; */
 		float: left;
 	}
 

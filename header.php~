@@ -40,7 +40,7 @@
 <![endif]-->
 </head>
 
-<body  <?php body_class(); ?> >
+<body  <?php body_class(); ?> style="z-index:-2">
 
 <div id="page-container" class="hfeed site" >
 	<header id="masthead" class="site-header" role="banner">
@@ -49,13 +49,13 @@
 		<div class="container">
 			<div class="site-branding">
 
-				<div class="header-left">
+				<div class="header-left" >
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<!-- <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==></img>  -->
 						<picture>
-							<source type="image/svg+xml" data-srcset="<?php bloginfo('template_directory'); ?>/images/logogrd.svg" />
+							<source data-srcset="<?php bloginfo('template_directory'); ?>/images/logogrd.svg" /> 
 							<source data-srcset="<?php bloginfo('template_directory'); ?>/images/logog.png" />
-  							<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+  							<img style="height:365px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
 								class="lazyload" alt="logo" />
 						</picture>
 					</a>
