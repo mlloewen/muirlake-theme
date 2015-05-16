@@ -578,7 +578,7 @@ div.site-branding img {	background-image: url('images/logog.png');
 
 /* line 648, ../sass/style.scss */
 .site-branding picture {
-  width: 50%;
+  width: 35%;
   max-width: 300px;
   height: auto;
 }
