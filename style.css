@@ -771,6 +771,7 @@ MEDIUM VIEWPORT
 	.site-branding img{
 		max-width: 300px;
 		padding: 20px, 0;
+        float: left;
 	}
 
 	#show-menu-button{
