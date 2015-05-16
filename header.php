@@ -20,7 +20,14 @@
       href="/favicon.png">
 
 <script src="https://cdn.rawgit.com/aFarkas/lazysizes/d864706395411d042925315e9fc88cd91360056f/lazysizes.min.js" async=""></script>
-<script src="https://cdn.rawgit.com/aFarkas/lazysizes/d864706395411d042925315e9fc88cd91360056f/plugins/respimg/ls.respimg.min.js" async=""></script>
+<script>
+		function loadJS(u){var r=document.getElementsByTagName("script")[ 0 ],s=document.createElement("script");s.src=u;r.parentNode.insertBefore(s,r);}
+
+		if(!window.HTMLPictureElement){
+			document.createElement('picture');
+			loadJS("https://cdnjs.cloudflare.com/ajax/libs/lazysizes/1.1.0/plugins/respimg/ls.respimg.min.js");
+		}
+</script>
 <?php wp_head(); ?>
 
 <!--[if gte IE 9]>
