@@ -564,7 +564,7 @@ HEADER
 	width: 100%;
 }
 
-div.site-branding img{
+div.site-branding picture{
 /*	background-image: url("images/logog.png");  */
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -577,7 +577,7 @@ div.site-branding img {	background-image: url('images/logog.png');
 */
 
 /* line 648, ../sass/style.scss */
-.site-branding img {
+.site-branding picture {
   width: 50%;
   max-width: 300px;
   height: auto;
@@ -768,7 +768,7 @@ MEDIUM VIEWPORT
 		overflow: hidden;
 	}
 
-	.site-branding img{
+	.site-branding picture{
 		max-width: 300px;
 		padding: 20px, 0;
         float: left;
@@ -894,7 +894,7 @@ LARGE VIEWPORT
 		padding-right: 0;
 	}
 
-	.site-branding img{
+	.site-branding picture{
 		max-width: 300px;
 		width: 60%;
 		padding: 20px 0;
