@@ -53,8 +53,8 @@
 					<!-- <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==></img>  -->
 						<!--[if IE 9]><video style="display: none"><![endif]-->
 						<picture>
-							<source data-srcset="<?php bloginfo('template_directory'); ?>/images/logogrd.svg" />
-							<source data-srcset="<?php bloginfo('template_directory'); ?>/images/logog.png" />
+							<source srcset="<?php bloginfo('template_directory'); ?>/images/logogrd.svg" />
+							<source srcset="<?php bloginfo('template_directory'); ?>/images/logog.png" />
 						<!--[if IE 9]></video><![endif]-->
   							<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
 								class="lazyload" alt="logo" />
