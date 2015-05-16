@@ -569,6 +569,10 @@ div.site-branding picture{
 	background-repeat: no-repeat;
 	background-size: contain;
 }
+div.site-branding img{
+/*	background-image: url("images/logog.png");  */
+	max-width: 300px;
+}
 /*
 div.site-branding img {	background-image: url('images/logog.png');
   background-repeat: no-repeat;
