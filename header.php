@@ -12,7 +12,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<title><?php wp_title( '| Muir Lake Church', true, 'right' ); ?></title>
+<title><?php wp_title( '', true, 'right' ); ?> . | Muir Lake Church</title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="icon"
