@@ -754,7 +754,7 @@ MEDIUM VIEWPORT
 	---------------------------------------*/
 	.header-left{
 /*		width: 50%; */
-/*		float: left; */
+		float: left; 
 	}
 
 	.header-right{
