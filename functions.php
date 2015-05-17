@@ -129,9 +129,18 @@ require get_template_directory() . '/inc/extras.php';
  */
 require get_template_directory() . '/inc/customizer.php';
 
+function my_myme_types($mime_types){
+    $mime_types['svg'] = 'image/svg+xml'; //Adding svg extension
+    $mime_types['psd'] = 'image/vnd.adobe.photoshop'; //Adding photoshop files
+    $mime_types['opus'] = 'audio/opus'; //Adding opus files
+    return $mime_types;
+}
+add_filter('upload_mimes', 'my_myme_types', 1, 1);
+
+
 /**
  * Load Jetpack compatibility file.
  */
-/* 
+/*
 require get_template_directory() . '/inc/jetpack.php';
 */
