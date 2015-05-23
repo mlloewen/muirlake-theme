@@ -5,14 +5,15 @@
  * Displays all of the <head> section and everything up till <div id="content">
  *
  * @package Muir Lake
- <img src="<?php bloginfo('template_directory'); ?>/images/menu-button.png">
+ <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/menu-button.png">
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<title><?php wp_title( '|', true, 'right' ); ?> Muir Lake Church</title>
+<title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="icon"
@@ -43,7 +44,7 @@
 
 <div id="page-container" class="hfeed site" >
 	<header id="masthead" class="site-header" role="banner">
-		<a href="#" id="show-menu-button"><img src="<?php bloginfo('template_directory'); ?>/images/menu-button.png"></a>
+		<a href="#" id="show-menu-button"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/menu-button.png"></a>
 
 		<div class="container">
 			<div class="site-branding">
@@ -53,8 +54,8 @@
 					<!-- <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==></img>  -->
 						<!--[if IE 9]><video style="display: none"><![endif]-->
 						<picture>
-							<source data-srcset="<?php bloginfo('template_directory'); ?>/images/logogrd.svg" />
-							<source data-srcset="<?php bloginfo('template_directory'); ?>/images/logog.png" />
+							<source data-srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logogrd.svg" />
+							<source data-srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logog.png" />
 						<!--[if IE 9]></video><![endif]-->
   							<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
 								class="lazyload" alt="logo" />

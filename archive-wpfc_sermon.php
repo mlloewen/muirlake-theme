@@ -1,9 +1,9 @@
 <?php
 /**
  * The template for displaying Sermon Archive pages.
- * To see this visit the http://yourdomain.com/sermons if you have permalinks enabled 
+ * To see this visit the http://yourdomain.com/sermons if you have permalinks enabled
  * or http://yourdomain.com/?post_type=wpfc_sermon if not.
- * 
+ *
  */
 
 get_header(); ?>
@@ -16,7 +16,7 @@ get_header(); ?>
 				?>
 				<h2 class="page-title">Sermons</h2>
 				<p><a class="anchor" href="http://muirlakealliance.ca/sermons/feed/" title="Podcast" rel="bookmark">PodCast</a></p>
-			
+
 				<?php render_wpfc_sorting(); ?>
 				<?php /* Display navigation to next/previous pages when applicable */ ?>
 				<?php if ( $wp_query->max_num_pages > 1 ) : ?>
@@ -86,7 +86,7 @@ get_header(); ?>
 									<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'sermon-manager' ) ); ?></div>
 								</div><!-- #nav-below -->
 				<?php endif; ?>
-		
+
 				</div><!-- #content -->
 			</div><!-- #container -->
 </div>

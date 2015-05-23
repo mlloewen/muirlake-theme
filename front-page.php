@@ -40,29 +40,27 @@
 				<picture>
 					<!--[if IE 9]><video style="display: none"><![endif]-->
 					<source
-						data-srcset="<?php bloginfo('template_directory'); ?>/images/meet-wide.jpg"
+						data-srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/meet-wide.jpg"
 						media="(max-width: 1050px)" />
 					<source
-						data-srcset="<?php bloginfo('template_directory'); ?>/images/meet.jpg" />
+						data-srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/meet.jpg" />
 					<!--[if IE 9]></video><![endif]-->
-					<img
-						src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
 						class="lazyload"
 						alt="listen to sermons" />
 				</picture>
 				<h3>Meet</h3>
 			</a>
-			<a href="/sermons">
+            <a href="/sermons">
 				<picture>
 					<!--[if IE 9]><video style="display: none"><![endif]-->
 					<source
-						data-srcset="<?php bloginfo('template_directory'); ?>/images/listen-wide.jpg"
+						data-srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/listen-wide.jpg"
 						media="(max-width: 1050px)" />
 					<source
-						data-srcset="<?php bloginfo('template_directory'); ?>/images/listen.jpg" />
+						data-srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/listen.jpg" />
 					<!--[if IE 9]></video><![endif]-->
-					<img
-						src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
 						class="lazyload"
 						alt="listen to sermons" />
 				</picture>
@@ -73,13 +71,12 @@
 				<picture>
 					<!--[if IE 9]><video style="display: none"><![endif]-->
 					<source
-						data-srcset="<?php bloginfo('template_directory'); ?>/images/calendar-wide.jpg"
+						data-srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/calendar-wide.jpg"
 						media="(max-width: 1050px)" />
 					<source
-						data-srcset="<?php bloginfo('template_directory'); ?>/images/calendar.jpg" />
+						data-srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/calendar.jpg" />
 					<!--[if IE 9]></video><![endif]-->
-					<img
-						src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
 						class="lazyload"
 						alt="Calandar of events" />
 				</picture>
@@ -99,11 +96,11 @@
 			<h2 class="widget-title">Information</h2>
 		</div>
 		<div class="col-2">
-			<? echo do_shortcode('[ai1ec events_limit="5"]') ?> 
+			<?php echo do_shortcode('[ai1ec events_limit="5"]') ?>
 		</div>
 		<div class="col-1">
 		   <a href="javascript:void(0)" onclick="mymap();">
-			   <img data-src="<?php bloginfo('template_directory'); ?>/images/map2.jpg" class="lazyload" data-expand="-1" />
+			   <img data-src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/map2.jpg" class="lazyload" data-expand="-1" />
        </a>
 		</div>
 		<div class="col-3">

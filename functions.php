@@ -14,14 +14,14 @@ if ( ! isset( $content_width ) ) {
 /*
 Custom menu item
 */
-add_filter( 'wp_nav_menu_items', 'your_custom_menu_item' );
+/*add_filter( 'wp_nav_menu_items', 'your_custom_menu_item' );
 function your_custom_menu_item ( $items ) {
-	$items .= '<li><a href="http://muirlakealliance.ca/sermons">Sermons</a></li>';
+	$items .= '<li><a href="http://muirlakealliance.ca/sermons">Sermons</a></li>'; */
 /*	$items .= '<ul>';
 		$items .= '<li><a href="http://muirlakealliance.ca/sermons/how-he-speaks-part-1/">How He Speaks: Part 1</a></li>';
-	$items .= '</ul>'; */
+	$items .= '</ul>';
 	return $items;
-}
+} */
 if ( ! function_exists( 'muir_lake_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -137,6 +137,37 @@ function my_myme_types($mime_types){
 }
 add_filter('upload_mimes', 'my_myme_types', 1, 1);
 
+/**
+ * Creates a nicely formatted and more specific title element text
+ * for output in head of document, based on current view.
+ *
+ * @since Twenty Twelve 1.0
+ *
+ * @param string $title Default title text for current view.
+ * @param string $sep Optional separator.
+ * @return string Filtered title.
+ */
+function twentytwelve_wp_title( $title, $sep ) {
+	global $paged, $page;
+
+	if ( is_feed() )
+		return $title;
+
+	// Add the site name.
+	$title .= get_bloginfo( 'name' );
+
+	// Add the site description for the home/front page.
+	$site_description = get_bloginfo( 'description', 'display' );
+	if ( $site_description && ( is_home() || is_front_page() ) )
+		$title = "$title $sep $site_description";
+
+	// Add a page number if necessary.
+	if ( $paged >= 2 || $page >= 2 )
+		$title = "$title $sep " . sprintf( __( 'Page %s', 'twentytwelve' ), max( $paged, $page ) );
+
+	return $title;
+}
+add_filter( 'wp_title', 'twentytwelve_wp_title', 10, 2 );
 
 /**
  * Load Jetpack compatibility file.

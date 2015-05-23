@@ -28,7 +28,7 @@
 
 <h2>Contact</h2><span id="map"></span><?php echo(wpautop(get_post_field( post_content , 31 ))); ?> 
 <div class="col-2"><a href="javascript:void(0)" onclick="mymap();">
-				<img src="<?php bloginfo('template_directory'); ?>/images/map2.jpg" alt="">
+				<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/map2.jpg" alt="">
 			</a></div>
 	<div class="clearfix"></div>
 	</div><!-- .container -->
