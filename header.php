@@ -20,13 +20,13 @@
       type="image/png"
       href="/favicon.png">
 
-<script src="https://cdn.rawgit.com/aFarkas/lazysizes/d864706395411d042925315e9fc88cd91360056f/lazysizes.min.js" async=""></script>
+<script src="https://cdn.rawgit.com/aFarkas/lazysizes/4d0a12690e4565a8c6596f39681385a37fe0b05e/lazysizes.min.js" async=""></script>
 <script>
 		function loadJS(u){var r=document.getElementsByTagName("script")[ 0 ],s=document.createElement("script");s.src=u;r.parentNode.insertBefore(s,r);}
 
 		if(!window.HTMLPictureElement){
 			document.createElement('picture');
-			loadJS("https://cdnjs.cloudflare.com/ajax/libs/lazysizes/1.1.0/plugins/respimg/ls.respimg.min.js");
+			loadJS("https://cdn.rawgit.com/aFarkas/lazysizes/4d0a12690e4565a8c6596f39681385a37fe0b05e/plugins/respimg/ls.respimg.min.jss");
 		}
 </script>
 <?php wp_head(); ?>
