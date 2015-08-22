@@ -38,13 +38,13 @@
         <div class="promo-links">
             <a class="meet" href="/leadership">
                 <picture>
-
+                    <!--[if IE 9]><video style="display: none"><![endif]-->
                     <source
-                        data-srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/meet-wide.jpg"
+                        srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/meet-wide.jpg"
                         media="(max-width: 1050px)" />
                     <source
-                        data-srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/meet.jpg" />
-
+                       srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/meet.jpg" />
+                   <!--[if IE 9]></video><![endif]-->
                     <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                         class="lazyload"
                         alt="listen to sermons" />
