@@ -45,7 +45,7 @@
                     <source
                        data-srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/meet.jpg" />
                    <!--[if IE 9]></video><![endif]-->
-                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    <img data-src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                         class="lazyload"
                         alt="listen to sermons" />
                 </picture>
@@ -60,7 +60,7 @@
                     <source
                         data-srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/listen.jpg" />
                     <!--[if IE 9]></video><![endif]-->
-                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    <img data-src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                         class="lazyload"
                         alt="listen to sermons" />
                 </picture>
@@ -76,7 +76,7 @@
                     <source
                         data-srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/calendar.jpg" />
                     <!--[if IE 9]></video><![endif]-->
-                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    <img data-src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                         class="lazyload"
                         alt="Calandar of events" />
                 </picture>
