@@ -40,10 +40,10 @@
                 <picture>
                     <!--[if IE 9]><video style="display: none"><![endif]-->
                     <source
-                        srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/meet-wide.jpg"
+                        data-srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/meet-wide.jpg"
                         media="(max-width: 1050px)" />
                     <source
-                       srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/meet.jpg" />
+                       data-srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/meet.jpg" />
                    <!--[if IE 9]></video><![endif]-->
                     <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                         class="lazyload"
