@@ -20,14 +20,16 @@
       type="image/png"
       href="/favicon.png">
 
-<script src="https://cdn.rawgit.com/aFarkas/lazysizes/4d0a12690e4565a8c6596f39681385a37fe0b05e/lazysizes.min.js" async=""></script>
+<script src="https://cdn.rawgit.com/aFarkas/lazysizes/f2a421fbc5fa8a1dce24dabb0bc412091d1cf25d/lazysizes.min.js" async=""></script>
+<script src="https://cdn.rawgit.com/jonathantneal/svg4everybody/e546be4045e9abe67a1c83a9ea850bc9462eef07/dist/svg4everybody.min.js" async=""></script>
 <script>
-		function loadJS(u){var r=document.getElementsByTagName("script")[ 0 ],s=document.createElement("script");s.src=u;r.parentNode.insertBefore(s,r);}
+    svg4everybody();
+        function loadJS(u){var r=document.getElementsByTagName("script")[ 0 ],s=document.createElement("script");s.src=u;r.parentNode.insertBefore(s,r);}
 
-		if(!window.HTMLPictureElement){
-			document.createElement('picture');
-			loadJS("https://cdn.rawgit.com/aFarkas/lazysizes/4d0a12690e4565a8c6596f39681385a37fe0b05e/plugins/respimg/ls.respimg.min.jss");
-		}
+        if(!window.HTMLPictureElement){
+            document.createElement('picture');
+            loadJS("https://cdn.rawgit.com/aFarkas/lazysizes/f2a421fbc5fa8a1dce24dabb0bc412091d1cf25d/plugins/respimg/ls.respimg.min.jss");
+        }
 </script>
 <?php wp_head(); ?>
 
@@ -43,41 +45,41 @@
 <body  <?php body_class(); ?> >
 
 <div id="page-container" class="hfeed site" >
-	<header id="masthead" class="site-header" role="banner">
-		<a href="#" id="show-menu-button"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/menu-button.png"></a>
+    <header id="masthead" class="site-header" role="banner">
+        <a href="#" id="show-menu-button"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/menu-button.png"></a>
 
-		<div class="container">
-			<div class="site-branding">
+        <div class="container">
+            <div class="site-branding">
 
-				<div class="header-left">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-					<!-- <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==></img>  -->
-						<!--[if IE 9]><video style="display: none"><![endif]-->
-						<picture>
-							<source srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logogrd.svg" />
-							<source srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logog.png" />
-						<!--[if IE 9]></video><![endif]-->
-  							<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-								class="lazyload" alt="logo" />
-						</picture>
-					</a>
-				</div>
+                <div class="header-left">
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                    <!-- <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==></img>  -->
+                        <!--[if IE 9]><video style="display: none"><![endif]-->
+                        <picture>
+                            <source srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logogrd.svg" />
+                            <source srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logog.png" />
+                        <!--[if IE 9]></video><![endif]-->
+                              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                class="lazyload" alt="logo" />
+                        </picture>
+                    </a>
+                </div>
 
-				<div class="header-right">
+                <div class="header-right">
 
-					<div class="site-tagline">&quot;Making followers of Jesus who love God and others selflessly.&quot;</div>
-				</div>
+                    <div class="site-tagline">&quot;Making followers of Jesus who love God and others selflessly.&quot;</div>
+                </div>
 
-			</div><!-- #site-branding -->
-		</div><!-- #container -->
+            </div><!-- #site-branding -->
+        </div><!-- #container -->
 
 <!--		<nav id="site-navigation" class="main-navigation" role="navigation">  -->
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<div  class="container-desktop-nav">
-				<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'muir-lake' ); ?></a>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-			</div><!-- #container-desktop-nav -->
-		</nav> <!-- #site-navigation -->
+        <nav id="site-navigation" class="main-navigation" role="navigation">
+            <div  class="container-desktop-nav">
+                <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'muir-lake' ); ?></a>
+                <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+            </div><!-- #container-desktop-nav -->
+        </nav> <!-- #site-navigation -->
 
-	</header><!-- #masthead -->
-	<div id="content" class="site-content">
+    </header><!-- #masthead -->
+    <div id="content" class="site-content">
