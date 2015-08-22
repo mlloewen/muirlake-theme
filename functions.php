@@ -9,18 +9,18 @@
  * Set the content width based on the theme's design and stylesheet.
  */
 if ( ! isset( $content_width ) ) {
-	$content_width = 640; /* pixels */
+    $content_width = 640; /* pixels */
 }
 /*
 Custom menu item
 */
 /*add_filter( 'wp_nav_menu_items', 'your_custom_menu_item' );
 function your_custom_menu_item ( $items ) {
-	$items .= '<li><a href="http://muirlakealliance.ca/sermons">Sermons</a></li>'; */
+    $items .= '<li><a href="http://muirlakealliance.ca/sermons">Sermons</a></li>'; */
 /*	$items .= '<ul>';
-		$items .= '<li><a href="http://muirlakealliance.ca/sermons/how-he-speaks-part-1/">How He Speaks: Part 1</a></li>';
-	$items .= '</ul>';
-	return $items;
+        $items .= '<li><a href="http://muirlakealliance.ca/sermons/how-he-speaks-part-1/">How He Speaks: Part 1</a></li>';
+    $items .= '</ul>';
+    return $items;
 } */
 if ( ! function_exists( 'muir_lake_setup' ) ) :
 /**
@@ -32,45 +32,45 @@ if ( ! function_exists( 'muir_lake_setup' ) ) :
  */
 function muir_lake_setup() {
 
-	/*
-	 * Make theme available for translation.
-	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on Muir Lake, use a find and replace
-	 * to change 'muir-lake-church' to the name of your theme in all the template files
-	 */
-	load_theme_textdomain( 'muir-lake-church-church', get_template_directory() . '/languages' );
+    /*
+     * Make theme available for translation.
+     * Translations can be filed in the /languages/ directory.
+     * If you're building a theme based on Muir Lake, use a find and replace
+     * to change 'muir-lake-church' to the name of your theme in all the template files
+     */
+    load_theme_textdomain( 'muir-lake-church-church', get_template_directory() . '/languages' );
 
-	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
+    // Add default posts and comments RSS feed links to head.
+    add_theme_support( 'automatic-feed-links' );
 
-	/*
-	 * Enable support for Post Thumbnails on posts and pages.
-	 *
-	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
-	 */
-	//add_theme_support( 'post-thumbnails' );
+    /*
+     * Enable support for Post Thumbnails on posts and pages.
+     *
+     * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
+     */
+    //add_theme_support( 'post-thumbnails' );
 
-	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'muir-lake-church-church' ),
-	) );
+    // This theme uses wp_nav_menu() in one location.
+    register_nav_menus( array(
+        'primary' => __( 'Primary Menu', 'muir-lake-church-church' ),
+    ) );
 
-	// Enable support for Post Formats.
-	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
+    // Enable support for Post Formats.
+    add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
 
-	// Setup the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'muir_lake_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
+    // Setup the WordPress core custom background feature.
+    add_theme_support( 'custom-background', apply_filters( 'muir_lake_custom_background_args', array(
+        'default-color' => 'ffffff',
+        'default-image' => '',
+    ) ) );
 
-	// Enable support for HTML5 markup.
-	add_theme_support( 'html5', array(
-		'comment-list',
-		'search-form',
-		'comment-form',
-		'gallery',
-	) );
+    // Enable support for HTML5 markup.
+    add_theme_support( 'html5', array(
+        'comment-list',
+        'search-form',
+        'comment-form',
+        'gallery',
+    ) );
 }
 endif; // muir_lake_setup
 add_action( 'after_setup_theme', 'muir_lake_setup' );
@@ -79,14 +79,14 @@ add_action( 'after_setup_theme', 'muir_lake_setup' );
  * Register widgetized area and update sidebar with default widgets.
  */
 function muir_lake_widgets_init() {
-	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'muir-lake-church-church' ),
-		'id'            => 'sidebar-1',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
-	) );
+    register_sidebar( array(
+        'name'          => __( 'Sidebar', 'muir-lake-church-church' ),
+        'id'            => 'sidebar-1',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h1 class="widget-title">',
+        'after_title'   => '</h1>',
+    ) );
 }
 add_action( 'widgets_init', 'muir_lake_widgets_init' );
 
@@ -94,17 +94,17 @@ add_action( 'widgets_init', 'muir_lake_widgets_init' );
  * Enqueue scripts and styles.
  */
 function muir_lake_scripts() {
-	wp_deregister_script('jquery');
+    wp_deregister_script('jquery');
 
-	wp_register_script('jquery','//cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js');
-	wp_enqueue_script('jquery');
-	wp_enqueue_style( 'muir-lake-church-style', get_stylesheet_uri() );
-	wp_deregister_script('themename-style');
-	wp_enqueue_script( 'muir-lake-church-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
-	wp_enqueue_script( 'muir-lake-church-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+/*	wp_register_script('jquery','//cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js');
+    wp_enqueue_script('jquery'); */
+    wp_enqueue_style( 'muir-lake-church-style', get_stylesheet_uri() );
+    wp_deregister_script('themename-style');
+    wp_enqueue_script( 'muir-lake-church-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+    wp_enqueue_script( 'muir-lake-church-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+    if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+        wp_enqueue_script( 'comment-reply' );
+    }
 }
 add_action( 'wp_enqueue_scripts', 'muir_lake_scripts' );
 
@@ -148,24 +148,24 @@ add_filter('upload_mimes', 'my_myme_types', 1, 1);
  * @return string Filtered title.
  */
 function twentytwelve_wp_title( $title, $sep ) {
-	global $paged, $page;
+    global $paged, $page;
 
-	if ( is_feed() )
-		return $title;
+    if ( is_feed() )
+        return $title;
 
-	// Add the site name.
-	$title .= get_bloginfo( 'name' );
+    // Add the site name.
+    $title .= get_bloginfo( 'name' );
 
-	// Add the site description for the home/front page.
-	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) )
-		$title = "$title $sep $site_description";
+    // Add the site description for the home/front page.
+    $site_description = get_bloginfo( 'description', 'display' );
+    if ( $site_description && ( is_home() || is_front_page() ) )
+        $title = "$title $sep $site_description";
 
-	// Add a page number if necessary.
-	if ( $paged >= 2 || $page >= 2 )
-		$title = "$title $sep " . sprintf( __( 'Page %s', 'twentytwelve' ), max( $paged, $page ) );
+    // Add a page number if necessary.
+    if ( $paged >= 2 || $page >= 2 )
+        $title = "$title $sep " . sprintf( __( 'Page %s', 'twentytwelve' ), max( $paged, $page ) );
 
-	return $title;
+    return $title;
 }
 add_filter( 'wp_title', 'twentytwelve_wp_title', 10, 2 );
 
