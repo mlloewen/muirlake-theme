@@ -23,7 +23,6 @@
 <script src="https://cdn.rawgit.com/aFarkas/lazysizes/f2a421fbc5fa8a1dce24dabb0bc412091d1cf25d/lazysizes.min.js" async=""></script>
 <script src="https://cdn.rawgit.com/jonathantneal/svg4everybody/e546be4045e9abe67a1c83a9ea850bc9462eef07/dist/svg4everybody.min.js" async=""></script>
 <script>
-    svg4everybody();
         function loadJS(u){var r=document.getElementsByTagName("script")[ 0 ],s=document.createElement("script");s.src=u;r.parentNode.insertBefore(s,r);}
 
         if(!window.HTMLPictureElement){
