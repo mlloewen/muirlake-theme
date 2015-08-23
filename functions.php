@@ -95,9 +95,8 @@ add_action( 'widgets_init', 'muir_lake_widgets_init' );
  */
 function muir_lake_scripts() {
     wp_deregister_script('jquery');
-
-/*	wp_register_script('jquery','//cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js');
-    wp_enqueue_script('jquery'); */
+    wp_register_script('jquery','//cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js');
+    wp_enqueue_script('jquery');
     wp_enqueue_style( 'muir-lake-church-style', get_stylesheet_uri() );
     wp_deregister_script('themename-style');
     wp_enqueue_script( 'muir-lake-church-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );

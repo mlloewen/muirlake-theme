@@ -20,7 +20,6 @@
       type="image/png"
       href="/favicon.png">
 
-<script src="//cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js" async=""></script>
 <script src="https://cdn.rawgit.com/aFarkas/lazysizes/f2a421fbc5fa8a1dce24dabb0bc412091d1cf25d/lazysizes.min.js" async=""></script>
 <script>
         function loadJS(u){var r=document.getElementsByTagName("script")[ 0 ],s=document.createElement("script");s.src=u;r.parentNode.insertBefore(s,r);}
