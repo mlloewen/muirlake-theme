@@ -26,7 +26,7 @@
 
     /*	if(!window.HTMLPictureElement){  */
             document.createElement('picture');
-            loadJS("https://cdn.rawgit.com/aFarkas/lazysizes/f2a421fbc5fa8a1dce24dabb0bc412091d1cf25d/plugins/respimg/ls.respimg.min.jss");
+            loadJS("https://cdn.rawgit.com/aFarkas/lazysizes/f2a421fbc5fa8a1dce24dabb0bc412091d1cf25d/plugins/respimg/ls.respimg.min.js");
 /*		} */
 </script>
 <?php wp_head(); ?>
