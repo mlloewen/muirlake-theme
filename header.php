@@ -57,7 +57,7 @@
                             <source type="image/svg+xml" srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logogrd.svg" />
                             <source type="image/png" srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logog.png" />
                         <!--[if IE 9]></video><![endif]-->
-                              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                              <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logog.png"
                                 class="lazyload" alt="logo" />
                         </picture>
                     </a>
