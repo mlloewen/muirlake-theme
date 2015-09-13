@@ -36,21 +36,7 @@
     <div class="clearfix"></div>
 
         <div class="promo-links">
-            <a class="meet" href="/leadership">
-                <picture>
-                    <!--[if IE 9]><video style="display: none"><![endif]-->
-                    <source
-                        data-srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/meet-wide.jpg"
-                        media="(max-width: 1050px)" />
-                    <source
-                       data-srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/meet.jpg" />
-                   <!--[if IE 9]></video><![endif]-->
-                    <img data-src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        class="lazyload"
-                        alt="listen to sermons" />
-                </picture>
-                <h3>Meet</h3>
-            </a>
+
             <a href="/sermons">
                 <picture>
                     <!--[if IE 9]><video style="display: none"><![endif]-->
@@ -81,6 +67,21 @@
                         alt="Calandar of events" />
                 </picture>
                 <h3>Events</h3>
+            </a>
+            <a class="meet" href="/leadership">
+                <picture>
+                    <!--[if IE 9]><video style="display: none"><![endif]-->
+                    <source
+                        data-srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/meet-wide.jpg"
+                        media="(max-width: 1050px)" />
+                    <source
+                       data-srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/images/KeithWebsitemeet.jpg" />
+                   <!--[if IE 9]></video><![endif]-->
+                    <img data-src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        class="lazyload"
+                        alt="listen to sermons" />
+                </picture>
+                <h3>Meet</h3>
             </a>
         </div>
 
