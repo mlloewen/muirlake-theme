@@ -56,6 +56,7 @@
                 get_permalink()
             );
         ?>
+        <?php comments_template(); ?>
 
         <?php edit_post_link( __( 'Edit', 'muir-lake' ), '<span class="edit-link">', '</span>' ); ?>
     </footer><!-- .entry-footer -->

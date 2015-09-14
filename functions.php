@@ -11,6 +11,8 @@
 if ( ! isset( $content_width ) ) {
     $content_width = 640; /* pixels */
 }
+/* editer styles*/
+add_editor_style();
 /*
 Custom menu item
 */
